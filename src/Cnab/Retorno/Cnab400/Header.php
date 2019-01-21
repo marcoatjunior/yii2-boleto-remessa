@@ -1,9 +1,9 @@
 <?php
-namespace Newerton\Yii2Boleto\Cnab\Retorno\Cnab400;
+namespace marcoatjunior\Yii2Boleto\Cnab\Retorno\Cnab400;
 
 use Carbon\Carbon;
-use Newerton\Yii2Boleto\Contracts\Cnab\Retorno\Cnab400\Header as HeaderContract;
-use Newerton\Yii2Boleto\Traits\MagicTrait;
+use marcoatjunior\Yii2Boleto\Contracts\Cnab\Retorno\Cnab400\Header as HeaderContract;
+use marcoatjunior\Yii2Boleto\Traits\MagicTrait;
 
 class Header implements HeaderContract
 {

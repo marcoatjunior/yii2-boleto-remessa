@@ -1,19 +1,19 @@
 <?php
 
-namespace Newerton\Yii2Boleto\Cnab\Retorno\Cnab240;
+namespace marcoatjunior\Yii2Boleto\Cnab\Retorno\Cnab240;
 
-use \Newerton\Yii2Boleto\Cnab\Retorno\AbstractRetorno as AbstractRetornoGeneric;
-use Newerton\Yii2Boleto\Contracts\Cnab\Retorno\Cnab240\HeaderLote as HeaderLoteContract;
-use Newerton\Yii2Boleto\Contracts\Cnab\Retorno\Cnab240\TrailerLote as TrailerLoteContract;
+use \marcoatjunior\Yii2Boleto\Cnab\Retorno\AbstractRetorno as AbstractRetornoGeneric;
+use marcoatjunior\Yii2Boleto\Contracts\Cnab\Retorno\Cnab240\HeaderLote as HeaderLoteContract;
+use marcoatjunior\Yii2Boleto\Contracts\Cnab\Retorno\Cnab240\TrailerLote as TrailerLoteContract;
 
 /**
  * Class AbstractRetorno
  *
- * @method  \Newerton\Yii2Boleto\Cnab\Retorno\Cnab240\Detalhe getDetalhe()
- * @method  \Newerton\Yii2Boleto\Cnab\Retorno\Cnab240\Header getHeader()
- * @method  \Newerton\Yii2Boleto\Cnab\Retorno\Cnab240\Trailer getTrailer()
- * @method  \Newerton\Yii2Boleto\Cnab\Retorno\Cnab240\Detalhe detalheAtual()
- * @package Newerton\Yii2Boleto\Cnab\Retorno\Cnab240
+ * @method  \marcoatjunior\Yii2Boleto\Cnab\Retorno\Cnab240\Detalhe getDetalhe()
+ * @method  \marcoatjunior\Yii2Boleto\Cnab\Retorno\Cnab240\Header getHeader()
+ * @method  \marcoatjunior\Yii2Boleto\Cnab\Retorno\Cnab240\Trailer getTrailer()
+ * @method  \marcoatjunior\Yii2Boleto\Cnab\Retorno\Cnab240\Detalhe detalheAtual()
+ * @package marcoatjunior\Yii2Boleto\Cnab\Retorno\Cnab240
  */
 abstract class AbstractRetorno extends AbstractRetornoGeneric
 {

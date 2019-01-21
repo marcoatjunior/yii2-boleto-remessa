@@ -1,18 +1,18 @@
 <?php
 
-namespace Newerton\Yii2Boleto\Boleto;
+namespace marcoatjunior\Yii2Boleto\Boleto;
 
 use Carbon\Carbon;
-use Newerton\Yii2Boleto\Boleto\Render\Html;
-use Newerton\Yii2Boleto\Boleto\Render\Pdf;
-use Newerton\Yii2Boleto\Contracts\Pessoa as PessoaContract;
-use Newerton\Yii2Boleto\Contracts\Boleto\Boleto as BoletoContract;
-use Newerton\Yii2Boleto\Util;
+use marcoatjunior\Yii2Boleto\Boleto\Render\Html;
+use marcoatjunior\Yii2Boleto\Boleto\Render\Pdf;
+use marcoatjunior\Yii2Boleto\Contracts\Pessoa as PessoaContract;
+use marcoatjunior\Yii2Boleto\Contracts\Boleto\Boleto as BoletoContract;
+use marcoatjunior\Yii2Boleto\Util;
 
 /**
  * Class AbstractBoleto
  *
- * @package Newerton\Yii2Boleto\Boleto
+ * @package marcoatjunior\Yii2Boleto\Boleto
  */
 abstract class AbstractBoleto implements BoletoContract
 {

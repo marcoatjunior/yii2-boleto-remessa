@@ -1,5 +1,5 @@
 <?php
-namespace Newerton\Yii2Boleto\Contracts\Cnab;
+namespace marcoatjunior\Yii2Boleto\Contracts\Cnab;
 
 interface Remessa extends Cnab
 {

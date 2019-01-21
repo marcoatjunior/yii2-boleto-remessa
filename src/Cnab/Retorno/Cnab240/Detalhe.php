@@ -1,11 +1,11 @@
 <?php
-namespace Newerton\Yii2Boleto\Cnab\Retorno\Cnab240;
+namespace marcoatjunior\Yii2Boleto\Cnab\Retorno\Cnab240;
 
 use Carbon\Carbon;
-use Newerton\Yii2Boleto\Contracts\Cnab\Retorno\Cnab240\Detalhe as DetalheContract;
-use Newerton\Yii2Boleto\Contracts\Pessoa as PessoaContract;
-use Newerton\Yii2Boleto\Traits\MagicTrait;
-use Newerton\Yii2Boleto\Util;
+use marcoatjunior\Yii2Boleto\Contracts\Cnab\Retorno\Cnab240\Detalhe as DetalheContract;
+use marcoatjunior\Yii2Boleto\Contracts\Pessoa as PessoaContract;
+use marcoatjunior\Yii2Boleto\Traits\MagicTrait;
+use marcoatjunior\Yii2Boleto\Util;
 
 class Detalhe implements DetalheContract
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Newerton\Yii2Boleto\Tests\Remessa;
+namespace marcoatjunior\Yii2Boleto\Tests\Remessa;
 
-use Newerton\Yii2Boleto\Boleto\Banco as Boleto;
-use Newerton\Yii2Boleto\Cnab\Remessa\Cnab400\Banco as Remessa;
-use Newerton\Yii2Boleto\Pessoa;
-use Newerton\Yii2Boleto\Tests\TestCase;
-use Newerton\Yii2Boleto\Util;
+use marcoatjunior\Yii2Boleto\Boleto\Banco as Boleto;
+use marcoatjunior\Yii2Boleto\Cnab\Remessa\Cnab400\Banco as Remessa;
+use marcoatjunior\Yii2Boleto\Pessoa;
+use marcoatjunior\Yii2Boleto\Tests\TestCase;
+use marcoatjunior\Yii2Boleto\Util;
 
 class RemessaCnab400Test extends TestCase
 {

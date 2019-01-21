@@ -1,14 +1,14 @@
 <?php
 
-namespace Newerton\Yii2Boleto\Boleto\Banco;
+namespace marcoatjunior\Yii2Boleto\Boleto\Banco;
 
-use Newerton\Yii2Boleto\Boleto\AbstractBoleto;
-use Newerton\Yii2Boleto\Contracts\Boleto\Boleto as BoletoContract;
-use Newerton\Yii2Boleto\Util;
+use marcoatjunior\Yii2Boleto\Boleto\AbstractBoleto;
+use marcoatjunior\Yii2Boleto\Contracts\Boleto\Boleto as BoletoContract;
+use marcoatjunior\Yii2Boleto\Util;
 
 /**
  * Class Hsbc
- * @package Newerton\Yii2Boleto\Boleto\Banco
+ * @package marcoatjunior\Yii2Boleto\Boleto\Banco
  */
 class Hsbc extends AbstractBoleto implements BoletoContract
 {

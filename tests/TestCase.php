@@ -1,5 +1,5 @@
 <?php
-namespace Newerton\Yii2Boleto\Tests;
+namespace marcoatjunior\Yii2Boleto\Tests;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 

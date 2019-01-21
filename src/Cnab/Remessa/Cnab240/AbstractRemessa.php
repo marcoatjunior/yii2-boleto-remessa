@@ -1,11 +1,11 @@
 <?php
-namespace Newerton\Yii2Boleto\Cnab\Remessa\Cnab240;
+namespace marcoatjunior\Yii2Boleto\Cnab\Remessa\Cnab240;
 
-use Newerton\Yii2Boleto\Cnab\Remessa\AbstractRemessa as AbstractRemessaGeneric;
+use marcoatjunior\Yii2Boleto\Cnab\Remessa\AbstractRemessa as AbstractRemessaGeneric;
 
 /**
  * Class AbstractRemessa
- * @package Newerton\Yii2Boleto\Cnab\Remessa\Cnab240
+ * @package marcoatjunior\Yii2Boleto\Cnab\Remessa\Cnab240
  */
 abstract class AbstractRemessa extends AbstractRemessaGeneric
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Newerton\Yii2Boleto\Tests;
+namespace marcoatjunior\Yii2Boleto\Tests;
 
-use Newerton\Yii2Boleto\Pessoa;
-use Newerton\Yii2Boleto\Util;
+use marcoatjunior\Yii2Boleto\Pessoa;
+use marcoatjunior\Yii2Boleto\Util;
 
 class PessoaTest extends TestCase
 {

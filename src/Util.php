@@ -1,6 +1,6 @@
 <?php
 
-namespace Newerton\Yii2Boleto;
+namespace marcoatjunior\Yii2Boleto;
 
 use Carbon\Carbon;
 
@@ -11,7 +11,7 @@ use Carbon\Carbon;
  * @TODO validar processar
  * @TODO validar float nos numeros
  *
- * @package Newerton\Yii2Boleto
+ * @package marcoatjunior\Yii2Boleto
  */
 final class Util
 {
@@ -885,7 +885,7 @@ final class Util
      */
     public static function addPessoa(&$property, $obj)
     {
-        if (is_subclass_of($obj, 'Newerton\\Yii2Boleto\\Contracts\\Pessoa')) {
+        if (is_subclass_of($obj, 'marcoatjunior\\Yii2Boleto\\Contracts\\Pessoa')) {
             $property = $obj;
             return $obj;
         } elseif (is_array($obj)) {

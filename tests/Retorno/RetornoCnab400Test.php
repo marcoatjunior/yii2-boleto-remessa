@@ -1,10 +1,10 @@
 <?php
 
-namespace Newerton\Yii2Boleto\Tests\Retorno;
+namespace marcoatjunior\Yii2Boleto\Tests\Retorno;
 
-use Newerton\Yii2Boleto\Cnab\Retorno\Cnab400\Banco\Bradesco;
-use Newerton\Yii2Boleto\Cnab\Retorno\Cnab400\Detalhe;
-use Newerton\Yii2Boleto\Tests\TestCase;
+use marcoatjunior\Yii2Boleto\Cnab\Retorno\Cnab400\Banco\Bradesco;
+use marcoatjunior\Yii2Boleto\Cnab\Retorno\Cnab400\Detalhe;
+use marcoatjunior\Yii2Boleto\Tests\TestCase;
 use Illuminate\Support\Collection;
 
 class RetornoCnab400Test extends TestCase
@@ -32,7 +32,7 @@ class RetornoCnab400Test extends TestCase
     }
 
     public function testRetornoSeekableIterator(){
-        $retorno = \Newerton\Yii2Boleto\Cnab\Retorno\Factory::make(__DIR__ . '/files/cnab400/bradesco.ret');
+        $retorno = \marcoatjunior\Yii2Boleto\Cnab\Retorno\Factory::make(__DIR__ . '/files/cnab400/bradesco.ret');
         $retorno->processar();
         $retorno->rewind();
         $this->assertEquals(1, $retorno->key());
@@ -49,7 +49,7 @@ class RetornoCnab400Test extends TestCase
     }
 
     public function testRetornoToArray(){
-        $retorno = \Newerton\Yii2Boleto\Cnab\Retorno\Factory::make(__DIR__ . '/files/cnab400/bradesco.ret');
+        $retorno = \marcoatjunior\Yii2Boleto\Cnab\Retorno\Factory::make(__DIR__ . '/files/cnab400/bradesco.ret');
         $retorno->processar();
 
         $array = $retorno->toArray();
@@ -60,7 +60,7 @@ class RetornoCnab400Test extends TestCase
     }
 
     public function testRetornoOcorrencia(){
-        $retorno = \Newerton\Yii2Boleto\Cnab\Retorno\Factory::make(__DIR__ . '/files/cnab400/bradesco.ret');
+        $retorno = \marcoatjunior\Yii2Boleto\Cnab\Retorno\Factory::make(__DIR__ . '/files/cnab400/bradesco.ret');
         $retorno->processar();
 
         $detalhe = $retorno->current();
@@ -72,7 +72,7 @@ class RetornoCnab400Test extends TestCase
 
     public function testRetornoBradescoCnab400()
     {
-        $retorno = \Newerton\Yii2Boleto\Cnab\Retorno\Factory::make(__DIR__ . '/files/cnab400/bradesco.ret');
+        $retorno = \marcoatjunior\Yii2Boleto\Cnab\Retorno\Factory::make(__DIR__ . '/files/cnab400/bradesco.ret');
         $retorno->processar();
 
         $this->assertNotNull($retorno->getHeader());
@@ -96,7 +96,7 @@ class RetornoCnab400Test extends TestCase
 
     public function testRetornoBancoBrasilCnab400()
     {
-        $retorno = \Newerton\Yii2Boleto\Cnab\Retorno\Factory::make(__DIR__ . '/files/cnab400/banco_brasil.ret');
+        $retorno = \marcoatjunior\Yii2Boleto\Cnab\Retorno\Factory::make(__DIR__ . '/files/cnab400/banco_brasil.ret');
         $retorno->processar();
 
         $this->assertNotNull($retorno->getHeader());
@@ -120,7 +120,7 @@ class RetornoCnab400Test extends TestCase
 
     public function testRetornoItauCnab400()
     {
-        $retorno = \Newerton\Yii2Boleto\Cnab\Retorno\Factory::make(__DIR__ . '/files/cnab400/itau.ret');
+        $retorno = \marcoatjunior\Yii2Boleto\Cnab\Retorno\Factory::make(__DIR__ . '/files/cnab400/itau.ret');
         $retorno->processar();
 
         $this->assertNotNull($retorno->getHeader());
@@ -145,7 +145,7 @@ class RetornoCnab400Test extends TestCase
 
     public function testRetornoCefCnab400()
     {
-        $retorno = \Newerton\Yii2Boleto\Cnab\Retorno\Factory::make(__DIR__ . '/files/cnab400/cef.ret');
+        $retorno = \marcoatjunior\Yii2Boleto\Cnab\Retorno\Factory::make(__DIR__ . '/files/cnab400/cef.ret');
         $retorno->processar();
 
         $this->assertNotNull($retorno->getHeader());
@@ -166,7 +166,7 @@ class RetornoCnab400Test extends TestCase
 
     public function testRetornoHsbcCnab400()
     {
-        $retorno = \Newerton\Yii2Boleto\Cnab\Retorno\Factory::make(__DIR__ . '/files/cnab400/hsbc.ret');
+        $retorno = \marcoatjunior\Yii2Boleto\Cnab\Retorno\Factory::make(__DIR__ . '/files/cnab400/hsbc.ret');
         $retorno->processar();
 
         $this->assertNotNull($retorno->getHeader());
@@ -187,7 +187,7 @@ class RetornoCnab400Test extends TestCase
 
     public function testRetornoSantanderCnab400()
     {
-        $retorno = \Newerton\Yii2Boleto\Cnab\Retorno\Factory::make(__DIR__ . '/files/cnab400/santander.ret');
+        $retorno = \marcoatjunior\Yii2Boleto\Cnab\Retorno\Factory::make(__DIR__ . '/files/cnab400/santander.ret');
         $retorno->processar();
 
         $this->assertNotNull($retorno->getHeader());
@@ -208,7 +208,7 @@ class RetornoCnab400Test extends TestCase
 
     public function testRetornoSicrediCnab400()
     {
-        $retorno = \Newerton\Yii2Boleto\Cnab\Retorno\Factory::make(__DIR__ . '/files/cnab400/sicredi.ret');
+        $retorno = \marcoatjunior\Yii2Boleto\Cnab\Retorno\Factory::make(__DIR__ . '/files/cnab400/sicredi.ret');
         $retorno->processar();
 
         $this->assertNotNull($retorno->getHeader());

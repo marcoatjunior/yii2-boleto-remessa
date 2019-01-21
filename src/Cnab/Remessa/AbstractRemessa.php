@@ -1,15 +1,15 @@
 <?php
 
-namespace Newerton\Yii2Boleto\Cnab\Remessa;
+namespace marcoatjunior\Yii2Boleto\Cnab\Remessa;
 
-use Newerton\Yii2Boleto\Contracts\Boleto\Boleto as BoletoContract;
-use Newerton\Yii2Boleto\Contracts\Pessoa as PessoaContract;
-use Newerton\Yii2Boleto\Support\Collection;
-use Newerton\Yii2Boleto\Util;
+use marcoatjunior\Yii2Boleto\Contracts\Boleto\Boleto as BoletoContract;
+use marcoatjunior\Yii2Boleto\Contracts\Pessoa as PessoaContract;
+use marcoatjunior\Yii2Boleto\Support\Collection;
+use marcoatjunior\Yii2Boleto\Util;
 
 /**
  * Class AbstractRemessa
- * @package Newerton\Yii2Boleto\Cnab\Remessa
+ * @package marcoatjunior\Yii2Boleto\Cnab\Remessa
  */
 abstract class AbstractRemessa
 {

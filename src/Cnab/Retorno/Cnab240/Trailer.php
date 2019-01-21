@@ -1,9 +1,9 @@
 <?php
 
-namespace Newerton\Yii2Boleto\Cnab\Retorno\Cnab240;
+namespace marcoatjunior\Yii2Boleto\Cnab\Retorno\Cnab240;
 
-use \Newerton\Yii2Boleto\Contracts\Cnab\Retorno\Cnab240\Trailer as TrailerContract;
-use Newerton\Yii2Boleto\Traits\MagicTrait;
+use \marcoatjunior\Yii2Boleto\Contracts\Cnab\Retorno\Cnab240\Trailer as TrailerContract;
+use marcoatjunior\Yii2Boleto\Traits\MagicTrait;
 
 class Trailer implements TrailerContract
 {

@@ -1,15 +1,15 @@
 <?php
-namespace Newerton\Yii2Boleto\Cnab\Remessa\Cnab400\Banco;
+namespace marcoatjunior\Yii2Boleto\Cnab\Remessa\Cnab400\Banco;
 
 use Carbon\Carbon;
-use Newerton\Yii2Boleto\Cnab\Remessa\Cnab400\AbstractRemessa;
-use Newerton\Yii2Boleto\Contracts\Boleto\Boleto as BoletoContract;
-use Newerton\Yii2Boleto\Contracts\Cnab\Remessa as RemessaContract;
-use Newerton\Yii2Boleto\Util;
+use marcoatjunior\Yii2Boleto\Cnab\Remessa\Cnab400\AbstractRemessa;
+use marcoatjunior\Yii2Boleto\Contracts\Boleto\Boleto as BoletoContract;
+use marcoatjunior\Yii2Boleto\Contracts\Cnab\Remessa as RemessaContract;
+use marcoatjunior\Yii2Boleto\Util;
 
 /**
  * Class Sicredi
- * @package Newerton\Yii2Boleto\Cnab\Remessa\Cnab400\Banco
+ * @package marcoatjunior\Yii2Boleto\Cnab\Remessa\Cnab400\Banco
  */
 class Sicredi extends AbstractRemessa implements RemessaContract
 {

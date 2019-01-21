@@ -1,9 +1,9 @@
 <?php
-namespace Newerton\Yii2Boleto\Cnab\Retorno;
+namespace marcoatjunior\Yii2Boleto\Cnab\Retorno;
 
-use Newerton\Yii2Boleto\Contracts\Boleto\Boleto as BoletoContract;
-use Newerton\Yii2Boleto\Contracts\Cnab\Retorno;
-use Newerton\Yii2Boleto\Util;
+use marcoatjunior\Yii2Boleto\Contracts\Boleto\Boleto as BoletoContract;
+use marcoatjunior\Yii2Boleto\Contracts\Cnab\Retorno;
+use marcoatjunior\Yii2Boleto\Util;
 
 class Factory
 {

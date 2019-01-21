@@ -1,7 +1,7 @@
 <?php
-namespace Newerton\Yii2Boleto\Contracts\Boleto;
+namespace marcoatjunior\Yii2Boleto\Contracts\Boleto;
 
-use Newerton\Yii2Boleto\Contracts\Pessoa as PessoaContract;
+use marcoatjunior\Yii2Boleto\Contracts\Pessoa as PessoaContract;
 
 interface Boleto
 {

@@ -1,5 +1,5 @@
 <?php
-namespace Newerton\Yii2Boleto\Contracts\Cnab\Retorno\Cnab240;
+namespace marcoatjunior\Yii2Boleto\Contracts\Cnab\Retorno\Cnab240;
 
 interface Header
 {

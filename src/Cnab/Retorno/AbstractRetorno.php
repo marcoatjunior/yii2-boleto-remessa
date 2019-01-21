@@ -1,14 +1,14 @@
 <?php
-namespace Newerton\Yii2Boleto\Cnab\Retorno;
+namespace marcoatjunior\Yii2Boleto\Cnab\Retorno;
 
-use Newerton\Yii2Boleto\Contracts\Cnab\Retorno\Cnab240\Detalhe as Detalhe240Contract;
-use Newerton\Yii2Boleto\Contracts\Cnab\Retorno\Cnab240\Header as Header240Contract;
-use Newerton\Yii2Boleto\Contracts\Cnab\Retorno\Cnab240\Trailer as Trailer240Contract;
-use Newerton\Yii2Boleto\Contracts\Cnab\Retorno\Cnab400\Detalhe as Detalhe400Contract;
-use Newerton\Yii2Boleto\Contracts\Cnab\Retorno\Cnab400\Trailer as Trailer400Contract;
-use Newerton\Yii2Boleto\Contracts\Cnab\Retorno\Cnab400\Header as Header400Contract;
-use Newerton\Yii2Boleto\Support\Collection;
-use Newerton\Yii2Boleto\Util;
+use marcoatjunior\Yii2Boleto\Contracts\Cnab\Retorno\Cnab240\Detalhe as Detalhe240Contract;
+use marcoatjunior\Yii2Boleto\Contracts\Cnab\Retorno\Cnab240\Header as Header240Contract;
+use marcoatjunior\Yii2Boleto\Contracts\Cnab\Retorno\Cnab240\Trailer as Trailer240Contract;
+use marcoatjunior\Yii2Boleto\Contracts\Cnab\Retorno\Cnab400\Detalhe as Detalhe400Contract;
+use marcoatjunior\Yii2Boleto\Contracts\Cnab\Retorno\Cnab400\Trailer as Trailer400Contract;
+use marcoatjunior\Yii2Boleto\Contracts\Cnab\Retorno\Cnab400\Header as Header400Contract;
+use marcoatjunior\Yii2Boleto\Support\Collection;
+use marcoatjunior\Yii2Boleto\Util;
 
 abstract class AbstractRetorno implements \Countable, \SeekableIterator
 {
@@ -80,7 +80,7 @@ abstract class AbstractRetorno implements \Countable, \SeekableIterator
             throw new \Exception("Arquivo: não existe");
         }
 
-        $r = new \ReflectionClass('\Newerton\Yii2Boleto\Contracts\Boleto\Boleto');
+        $r = new \ReflectionClass('\marcoatjunior\Yii2Boleto\Contracts\Boleto\Boleto');
         $constantNames = $r->getConstants();
         $bancosDisponiveis = [];
         foreach ($constantNames as $constantName => $codigoBanco) {

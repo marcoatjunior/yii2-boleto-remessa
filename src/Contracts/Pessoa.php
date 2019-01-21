@@ -1,5 +1,5 @@
 <?php
-namespace Newerton\Yii2Boleto\Contracts;
+namespace marcoatjunior\Yii2Boleto\Contracts;
 
 interface Pessoa
 {

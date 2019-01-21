@@ -1,8 +1,8 @@
 <?php
-namespace Newerton\Yii2Boleto;
+namespace marcoatjunior\Yii2Boleto;
 
-use Newerton\Yii2Boleto\Contracts\Pessoa as PessoaContract;
-use Newerton\Yii2Boleto\Util;
+use marcoatjunior\Yii2Boleto\Contracts\Pessoa as PessoaContract;
+use marcoatjunior\Yii2Boleto\Util;
 
 class Pessoa implements PessoaContract
 {

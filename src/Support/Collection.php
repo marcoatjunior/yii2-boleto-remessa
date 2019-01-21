@@ -1,6 +1,6 @@
 <?php
 
-namespace Newerton\Yii2Boleto\Support;
+namespace marcoatjunior\Yii2Boleto\Support;
 
 use Countable;
 use ArrayAccess;
@@ -10,11 +10,11 @@ use CachingIterator;
 use JsonSerializable;
 use IteratorAggregate;
 use InvalidArgumentException;
-use Newerton\Yii2Boleto\Traits\Macroable;
+use marcoatjunior\Yii2Boleto\Traits\Macroable;
 
 /**
  * Class Collection
- * @package Newerton\Yii2Boleto\Traits
+ * @package marcoatjunior\Yii2Boleto\Traits
  */
 class Collection implements ArrayAccess, Arrayable, Countable, IteratorAggregate, Jsonable, JsonSerializable
 {

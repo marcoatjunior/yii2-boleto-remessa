@@ -1,10 +1,10 @@
 <?php
-namespace Newerton\Yii2Boleto\Cnab\Retorno\Cnab400\Banco;
+namespace marcoatjunior\Yii2Boleto\Cnab\Retorno\Cnab400\Banco;
 
-use Newerton\Yii2Boleto\Cnab\Retorno\Cnab400\AbstractRetorno;
-use Newerton\Yii2Boleto\Contracts\Boleto\Boleto as BoletoContract;
-use Newerton\Yii2Boleto\Contracts\Cnab\RetornoCnab400;
-use Newerton\Yii2Boleto\Util;
+use marcoatjunior\Yii2Boleto\Cnab\Retorno\Cnab400\AbstractRetorno;
+use marcoatjunior\Yii2Boleto\Contracts\Boleto\Boleto as BoletoContract;
+use marcoatjunior\Yii2Boleto\Contracts\Cnab\RetornoCnab400;
+use marcoatjunior\Yii2Boleto\Util;
 
 class Bnb extends AbstractRetorno implements RetornoCnab400
 {

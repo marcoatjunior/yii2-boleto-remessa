@@ -1,10 +1,10 @@
 <?php
 
-namespace Newerton\Yii2Boleto\Support;
+namespace marcoatjunior\Yii2Boleto\Support;
 
 use ArrayAccess;
-use Newerton\Yii2Boleto\Collection;
-use Newerton\Yii2Boleto\Traits\Macroable;
+use marcoatjunior\Yii2Boleto\Collection;
+use marcoatjunior\Yii2Boleto\Traits\Macroable;
 
 class Arr
 {

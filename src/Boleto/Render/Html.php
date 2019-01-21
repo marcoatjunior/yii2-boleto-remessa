@@ -1,9 +1,9 @@
 <?php
 
-namespace Newerton\Yii2Boleto\Boleto\Render;
+namespace marcoatjunior\Yii2Boleto\Boleto\Render;
 
-use Newerton\Yii2Boleto\Contracts\Boleto\Boleto as BoletoContract;
-use Newerton\Yii2Boleto\Contracts\Boleto\Render\Html as HtmlContract;
+use marcoatjunior\Yii2Boleto\Contracts\Boleto\Boleto as BoletoContract;
+use marcoatjunior\Yii2Boleto\Contracts\Boleto\Render\Html as HtmlContract;
 use yii\bootstrap\Widget;
 
 class Html extends Widget implements HtmlContract

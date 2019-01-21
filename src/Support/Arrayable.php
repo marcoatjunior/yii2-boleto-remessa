@@ -1,10 +1,10 @@
 <?php
 
-namespace Newerton\Yii2Boleto\Support;
+namespace marcoatjunior\Yii2Boleto\Support;
 
 /**
  * Interface Arrayable
- * @package Newerton\Yii2Boleto\Support
+ * @package marcoatjunior\Yii2Boleto\Support
  */
 interface Arrayable
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Newerton\Yii2Boleto\Traits;
+namespace marcoatjunior\Yii2Boleto\Traits;
 
 use Closure;
 use BadMethodCallException;
 
 /**
  * Trait Macroable
- * @package Newerton\Yii2Boleto\Traits
+ * @package marcoatjunior\Yii2Boleto\Traits
  */
 trait Macroable
 {

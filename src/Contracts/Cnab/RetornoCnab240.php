@@ -1,6 +1,6 @@
 <?php
 
-namespace Newerton\Yii2Boleto\Contracts\Cnab;
+namespace marcoatjunior\Yii2Boleto\Contracts\Cnab;
 
 interface RetornoCnab240 extends Cnab
 {

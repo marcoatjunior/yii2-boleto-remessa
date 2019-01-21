@@ -1,5 +1,5 @@
 <?php
-namespace Newerton\Yii2Boleto\Contracts\Boleto\Render;
+namespace marcoatjunior\Yii2Boleto\Contracts\Boleto\Render;
 
 interface Pdf
 {

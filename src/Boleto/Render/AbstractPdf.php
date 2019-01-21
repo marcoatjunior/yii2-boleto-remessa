@@ -1,6 +1,6 @@
 <?php
 
-namespace Newerton\Yii2Boleto\Boleto\Render;
+namespace marcoatjunior\Yii2Boleto\Boleto\Render;
 
 use fpdf\FPDF;
 

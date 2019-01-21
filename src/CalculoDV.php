@@ -1,5 +1,5 @@
 <?php
-namespace Newerton\Yii2Boleto;
+namespace marcoatjunior\Yii2Boleto;
 
 class CalculoDV
 {

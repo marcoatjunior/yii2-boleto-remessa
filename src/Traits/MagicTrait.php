@@ -1,9 +1,9 @@
 <?php
-namespace Newerton\Yii2Boleto\Traits;
+namespace marcoatjunior\Yii2Boleto\Traits;
 
 /**
  * Trait MagicTrait
- * @package Newerton\Yii2Boleto
+ * @package marcoatjunior\Yii2Boleto
  */
 trait MagicTrait
 {

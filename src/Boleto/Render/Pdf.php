@@ -1,10 +1,10 @@
 <?php
 
-namespace Newerton\Yii2Boleto\Boleto\Render;
+namespace marcoatjunior\Yii2Boleto\Boleto\Render;
 
-use Newerton\Yii2Boleto\Contracts\Boleto\Boleto as BoletoContract;
-use Newerton\Yii2Boleto\Contracts\Boleto\Render\Pdf as PdfContract;
-use Newerton\Yii2Boleto\Util;
+use marcoatjunior\Yii2Boleto\Contracts\Boleto\Boleto as BoletoContract;
+use marcoatjunior\Yii2Boleto\Contracts\Boleto\Render\Pdf as PdfContract;
+use marcoatjunior\Yii2Boleto\Util;
 
 class Pdf extends AbstractPdf implements PdfContract
 {

@@ -1,6 +1,6 @@
 <?php
 require 'autoload.php';
-$beneficiario = new \Newerton\Yii2Boleto\Pessoa(
+$beneficiario = new \marcoatjunior\Yii2Boleto\Pessoa(
     [
     'nome' => 'ACME',
     'endereco' => 'Rua um, 123',
@@ -11,7 +11,7 @@ $beneficiario = new \Newerton\Yii2Boleto\Pessoa(
     ]
 );
 
-$pagador = new \Newerton\Yii2Boleto\Pessoa(
+$pagador = new \marcoatjunior\Yii2Boleto\Pessoa(
     [
     'nome' => 'Cliente',
     'endereco' => 'Rua um, 123',
@@ -23,7 +23,7 @@ $pagador = new \Newerton\Yii2Boleto\Pessoa(
     ]
 );
 
-$boleto = new Newerton\Yii2Boleto\Boleto\Banco\Bradesco(
+$boleto = new marcoatjunior\Yii2Boleto\Boleto\Banco\Bradesco(
     [
     'logo' => realpath(__DIR__ . '/../logos/') . DIRECTORY_SEPARATOR . '237.png',
     'dataVencimento' => new \Carbon\Carbon(),
@@ -44,6 +44,6 @@ $boleto = new Newerton\Yii2Boleto\Boleto\Banco\Bradesco(
     ]
 );
 
-$pdf = new Newerton\Yii2Boleto\Boleto\Render\Pdf();
+$pdf = new marcoatjunior\Yii2Boleto\Boleto\Render\Pdf();
 $pdf->addBoleto($boleto);
 $pdf->gerarBoleto($pdf::OUTPUT_SAVE, __DIR__ . DIRECTORY_SEPARATOR . 'arquivos' . DIRECTORY_SEPARATOR . 'bradesco.pdf');

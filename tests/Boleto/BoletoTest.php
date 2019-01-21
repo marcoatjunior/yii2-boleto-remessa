@@ -1,11 +1,11 @@
 <?php
 
-namespace Newerton\Yii2Boleto\Tests\Boleto;
+namespace marcoatjunior\Yii2Boleto\Tests\Boleto;
 
-use Newerton\Yii2Boleto\Boleto\Banco as Boleto;
-use Newerton\Yii2Boleto\Boleto\Render\Pdf;
-use Newerton\Yii2Boleto\Pessoa;
-use Newerton\Yii2Boleto\Tests\TestCase;
+use marcoatjunior\Yii2Boleto\Boleto\Banco as Boleto;
+use marcoatjunior\Yii2Boleto\Boleto\Render\Pdf;
+use marcoatjunior\Yii2Boleto\Pessoa;
+use marcoatjunior\Yii2Boleto\Tests\TestCase;
 
 class BoletoTest extends TestCase
 {

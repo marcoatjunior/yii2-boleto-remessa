@@ -1,6 +1,6 @@
 <?php
 
-namespace Newerton\Yii2Boleto\Contracts\Cnab\Retorno;
+namespace marcoatjunior\Yii2Boleto\Contracts\Cnab\Retorno;
 
 interface Detalhe
 {

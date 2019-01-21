@@ -1,6 +1,6 @@
 <?php
 require 'autoload.php';
-$beneficiario = new \Newerton\Yii2Boleto\Pessoa(
+$beneficiario = new \marcoatjunior\Yii2Boleto\Pessoa(
     [
         'nome'      => 'ACME',
         'endereco'  => 'Rua um, 123',
@@ -11,7 +11,7 @@ $beneficiario = new \Newerton\Yii2Boleto\Pessoa(
     ]
 );
 
-$pagador = new \Newerton\Yii2Boleto\Pessoa(
+$pagador = new \marcoatjunior\Yii2Boleto\Pessoa(
     [
         'nome'      => 'Cliente',
         'endereco'  => 'Rua um, 123',
@@ -23,7 +23,7 @@ $pagador = new \Newerton\Yii2Boleto\Pessoa(
     ]
 );
 
-$boleto = new Newerton\Yii2Boleto\Boleto\Banco\Itau(
+$boleto = new marcoatjunior\Yii2Boleto\Boleto\Banco\Itau(
     [
         'logo'                   => realpath(__DIR__ . '/../logos/') . DIRECTORY_SEPARATOR . '341.png',
         'dataVencimento'         => new \Carbon\Carbon(),
@@ -45,7 +45,7 @@ $boleto = new Newerton\Yii2Boleto\Boleto\Banco\Itau(
     ]
 );
 
-$remessa = new \Newerton\Yii2Boleto\Cnab\Remessa\Cnab400\Banco\Itau(
+$remessa = new \marcoatjunior\Yii2Boleto\Cnab\Remessa\Cnab400\Banco\Itau(
     [
         'agencia'      => 1111,
         'conta'        => 99999,
