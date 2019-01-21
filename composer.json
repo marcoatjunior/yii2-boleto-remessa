@@ -1,17 +1,25 @@
 {
-  "name": "newerton/yii2-boleto-remessa",
+  "name": "marcoatjunior/yii2-boleto-remessa",
   "description": "Biblioteca com boletos e sistema de remessa e retorno para o Yii2 Framework",
   "keywords": [
     "newerton",
     "yii2",
-    "yii2-boleto-remessa"
+    "yii2-boleto-remessa",
+    "marcoatjunior",
   ],
-  "homepage": "https://github.com/newerton/yii2-boleto-remessa",
   "license": "MIT",
+  "support": {
+        "issues": "https://github.com/marcoatjunior/yii2-boleto-remessa/issues?state=open",
+        "source": "https://github.com/marcoatjunior/yii2-boleto-remessa"
+    },
   "authors": [
     {
       "name": "Newerton Vargas de Araujo",
       "email": "newerton.araujo@gmail.com"
+    },
+    {
+      "name": "Marco Aurelio Taborda Junior",
+      "email": "marcotaborda.jr@gmail.com"
     }
   ],
   "require": {
@@ -27,12 +35,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Newerton\\Yii2Boleto\\": "src"
+      "marcoatjunior\\Yii2Boleto\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Newerton\\Yii2Boleto\\Tests\\": "tests"
+      "marcoatjunior\\Yii2Boleto\\Tests\\": "tests"
     }
   }
 }
