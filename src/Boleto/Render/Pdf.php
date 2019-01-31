@@ -170,11 +170,18 @@ class Pdf extends AbstractPdf implements PdfContract
         $this->Cell(50, $this->desc, $this->_('(=) Valor Cobrado'), 'TR', 1);
 
         $this->SetFont($this->PadraoFont, 'B', $this->fcel);
-        $this->Cell(30, $this->cell, $this->_(!is_null($this->boleto[$i]->getDesconto()) ? 'R$ ' . str_replace('.', ',', $this->boleto[$i]->getDesconto()) : ''), 'LR');
+        $this->Cell(30, $this->cell, $this->_(($this->boleto[$i]->getDesconto() > 0) ? 'R$ ' . str_replace('.', ',', (float) $this->boleto[$i]->getDesconto()) : ''), 'LR');
         $this->Cell(30, $this->cell, $this->_(''), 'R');
-        $this->Cell(30, $this->cell, $this->_(($this->boleto[$i]->getMulta() > 0) ? 'R$ ' . ($this->boleto[$i]->getMulta() + $this->boleto[$i]->getJuros()) : ''), 'R');
+        $this->Cell(30, $this->cell, $this->_(($this->boleto[$i]->getMulta() > 0) ? 'R$ ' . str_replace('.', ',', ((float) $this->boleto[$i]->getMulta() + (float) $this->boleto[$i]->getJuros())) : ''), 'R');
         $this->Cell(30, $this->cell, $this->_(''), 'R');
-        $this->Cell(50, $this->cell, $this->_(!is_null($this->boleto[$i]->getDesconto()) ? 'R$ ' . str_replace('.', ',', ($this->boleto[$i]->getValor() - $this->boleto[$i]->getDesconto())) : ''), 'R', 1, 'R');
+
+        if ($this->boleto[$i]->getMulta() > 0) {
+            $this->Cell(50, $this->cell, $this->_('R$ ' . str_replace('.', ',', ((float) $this->boleto[$i]->getValor() + (float) $this->boleto[$i]->getMulta() + (float) $this->boleto[$i]->getJuros()))), 'R', 1, 'R');
+        } else if ($this->boleto[$i]->getDesconto() > 0) {
+            $this->Cell(50, $this->cell, $this->_('R$ ' . str_replace('.', ',', ((float) $this->boleto[$i]->getValor() - (float) $this->boleto[$i]->getDesconto()))), 'R', 1, 'R');
+        } else {
+            $this->Cell(50, $this->cell, $this->_('R$ ' . str_replace('.', ',', ((float) $this->boleto[$i]->getValor()))), 'R', 1, 'R');
+        }
 
         $this->SetFont($this->PadraoFont, '', $this->fdes);
         $this->Cell(0, $this->desc, $this->_('Pagador'), 'TLR', 1);
@@ -291,7 +298,7 @@ class Pdf extends AbstractPdf implements PdfContract
 
         $this->SetFont($this->PadraoFont, '', $this->fdes);
         $this->Cell(120, $this->cell, $this->_(''), 'LR');
-        $this->Cell(50, $this->cell, $this->_(!is_null($this->boleto[$i]->getDesconto()) ? 'R$ ' . str_replace('.', ',', $this->boleto[$i]->getDesconto()) : ''), 'R', 1, 'R');
+        $this->Cell(50, $this->cell, $this->_(($this->boleto[$i]->getDesconto() > 0) ? 'R$ ' . str_replace('.', ',', $this->boleto[$i]->getDesconto()) : ''), 'R', 1, 'R');
 
         $this->Cell(120, $this->desc, $this->_(''), 'LR');
         $this->Cell(50, $this->desc, $this->_('(-) Outras deduções'), 'TR', 1);
@@ -303,7 +310,7 @@ class Pdf extends AbstractPdf implements PdfContract
         $this->Cell(50, $this->desc, $this->_('(+) Mora / Multa'), 'TR', 1);
 
         $this->Cell(120, $this->cell, $this->_(''), 'LR');
-        $this->Cell(50, $this->cell, $this->_(($this->boleto[$i]->getMulta() > 0) ? 'R$ ' . ($this->boleto[$i]->getMulta() + $this->boleto[$i]->getJuros()) : ''), 'R', 1, 'R');
+        $this->Cell(50, $this->cell, $this->_(($this->boleto[$i]->getMulta() > 0) ? 'R$ ' . str_replace('.', ',', ((float) $this->boleto[$i]->getMulta() + (float) $this->boleto[$i]->getJuros())) : ''), 'R');
 
         $this->Cell(120, $this->desc, $this->_(''), 'LR');
         $this->Cell(50, $this->desc, $this->_('(+) Outros acréscimos'), 'TR', 1);
@@ -315,7 +322,14 @@ class Pdf extends AbstractPdf implements PdfContract
         $this->Cell(50, $this->desc, $this->_('(=) Valor cobrado'), 'TR', 1);
 
         $this->Cell(120, $this->cell, $this->_(''), 'BLR');
-        $this->Cell(50, $this->cell, $this->_(!is_null($this->boleto[$i]->getDesconto()) ? 'R$ ' . str_replace('.', ',', ($this->boleto[$i]->getValor() - $this->boleto[$i]->getDesconto())) : ''), 'BR', 1, 'R');
+
+        if ($this->boleto[$i]->getMulta() > 0) {
+            $this->Cell(50, $this->cell, $this->_('R$ ' . str_replace('.', ',', ((float) $this->boleto[$i]->getValor() + (float) $this->boleto[$i]->getMulta() + (float) $this->boleto[$i]->getJuros()))), 'R', 1, 'R');
+        } else if ($this->boleto[$i]->getDesconto() > 0) {
+            $this->Cell(50, $this->cell, $this->_('R$ ' . str_replace('.', ',', ((float) $this->boleto[$i]->getValor() - (float) $this->boleto[$i]->getDesconto()))), 'R', 1, 'R');
+        } else {
+            $this->Cell(50, $this->cell, $this->_('R$ ' . str_replace('.', ',', ((float) $this->boleto[$i]->getValor()))), 'R', 1, 'R');
+        }
 
         $this->SetFont($this->PadraoFont, '', $this->fdes);
         $this->Cell(0, $this->desc, $this->_('Pagador'), 'LR', 1);
