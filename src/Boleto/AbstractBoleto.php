@@ -1392,6 +1392,20 @@ abstract class AbstractBoleto implements BoletoContract
     }
 
     /**
+     * Seta a linha digitável
+     *
+     * @param  string $campoLinhaDigitavel
+     *
+     * @return AbstractBoleto
+     */
+    public function setLinhaDigitavel($campoLinhaDigitavel)
+    {
+        $this->campoLinhaDigitavel = $campoLinhaDigitavel;
+
+        return $this;
+    }
+
+    /**
      * Retorna a linha digitável do boleto
      *
      * @return string
